@@ -1,0 +1,12 @@
+import math
+
+def calculate_expression(x):
+    a = x * math.atan(1/8)
+    b = 2 * math.exp(3.2 * x)
+    c = math.log(abs(1 + math.sin(3 * x)))
+    
+    result = a + b - c
+    return result
+
+x = float(input("Введіть значення x: "))
+print("Результат:", calculate_expression(x))
