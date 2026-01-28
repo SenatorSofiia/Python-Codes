@@ -1,0 +1,7 @@
+import random
+a=random.randint(1,100)
+b=random.randint(1,500)
+a1=a*3600
+b1=b*60
+c=a1+b1
+print('в', a , 'годинах і в', b, 'хвилинах', c, 'секунд')
