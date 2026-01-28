@@ -1,0 +1,5 @@
+import math as m1
+m=float(input("Введіть m="));
+b=float(input("Введіть b="))
+a=m1.sin(m1.pi/2)
+y=(a/b)*m1.sqrt(m); print("функція y=", y)
