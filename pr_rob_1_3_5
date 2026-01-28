@@ -1,0 +1,4 @@
+import random
+a=random.randint(5,70)
+b=100-a
+print('остача зі 100 грн від', a, 'грн дорівнює', b, 'грн')
