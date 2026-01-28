@@ -1,0 +1,7 @@
+import random
+m=100*random.random () +1
+n=100*random.random() +1
+m1=m*100
+n1=n*10
+g=m1-n1
+print(m, 'метрів -', n, 'дециметрів =', g, 'сантиметрів')
