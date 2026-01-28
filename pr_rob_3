@@ -1,0 +1,33 @@
+from itertools import product
+check_law (expression1, expression2) :
+  for x, y, z in product ([O,1], repeat=3):
+    if eval (expression1) != eval (expression2):
+      return False
+    returb True
+expr1 = "x and y"
+expr2 = "y and x"
+print (["закон комутативності AND: (check_law(expr1, exp:2))")
+
+expr1 = "x or (y and z) "
+expr2 = " (x or y) and (x or z) "
+print (["Закон дистрибутивності OR-AND: (check_law (expr1, expr2))")
+
+expr1 = "x and 0"
+expr2 = "0"
+print (f"Закон нуля (AND з 0): (check_law (expr1, expr2))")
+
+expr1= "x and 1"
+expr2 = "x"
+print (f"Закон одиниці (AND з 1): (check law(expr1, expr2))")
+
+expr1 = "x or 1"
+expr2 = "1"
+print (f"Закон одиниці (OR 3 1):(check_law (expr1, expr2)) ")
+
+expr1 = "x or 0"
+expr2 = "x"
+print (f"Закон нуля (OR з 0): (check_law(expr1, expr2))")
+
+expr1 = "not (x and y)"
+expr2 = "not x or not y"
+print (f"Закон де Моррана (NOT AND OR): (check_law (expr1, expr2))")
