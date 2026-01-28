@@ -1,0 +1,18 @@
+import math
+
+def calculate_y(x):
+    try:
+        numerator = math.sqrt(math.sin(x + 1) + math.atan(math.pi * x))
+        denominator = math.log10(x + 2 * math.pi)
+        
+        if denominator == 0:
+            raise ValueError("Ділення неможливе")
+        
+        return (numerator / denominator)-1
+    except ValueError as e:
+        return f"Помилка: {e}"
+
+x_value = float(input("Введіть значення x: "))
+
+result = calculate_y(x_value)
+print(f"Результат: y = {result}")
