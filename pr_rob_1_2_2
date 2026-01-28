@@ -1,0 +1,11 @@
+import math
+
+def calculate_expression(x):
+    a = x * abs(2 - math.cos(3 * x))
+    b = math.exp(math.cos(3 * x)) - 1
+    
+    result = a + b
+    return result
+
+x = float(input("Введіть значення x: "))
+print("Результат:", calculate_expression(x))
