@@ -1,0 +1,5 @@
+import random
+a=26
+b=random.randint(1,100)
+c=a*b
+print('прямокутник зі стороною', a, 'та зі стороною', b, 'має площу', c)
