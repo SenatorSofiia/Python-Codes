@@ -1,0 +1,10 @@
+import math
+
+def calculate_y(x):
+    y = math.sin(x) - (math.cos(x**3)) * math.sin(x**2 - 4.2) + 4.27
+    return y
+
+x_value = float(input("Введіть значення x: "))
+
+result = calculate_y(x_value)
+print(f"Результат: y = {result}")
