@@ -1,0 +1,16 @@
+import random
+a=random.randint(1,150)
+b=random.randint(1,8)
+c=9*random.random () +1
+d=-100*random.random() -1
+print('a=', a)
+print('b=' ,b)
+print('c=', c)
+print('d=', d)
+print('a+b=', a+b)
+print('a-b', a-b)
+print('a*b=', a*b)
+print('a/b=',a/b)
+print('a//b=', a//b)
+print('a%b=',a%b)
+print('d**(-9)-(7*a+300/b)-10000%b=', d**(-9)-(7*a+300/b)-10000%b)
